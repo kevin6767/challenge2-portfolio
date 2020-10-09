@@ -16,8 +16,6 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
     z-index: 9999;
 }
@@ -123,20 +121,26 @@ header nav ul li a:hover {
     height: 250px;
     padding: 10px;
 }
+.work {
+    height: 600px;    
+}
 
 .work-me {
     margin: 50px 50px 10px 210px;
     padding-bottom: 50px;
     width: 80%;
     display: flex;
-    align-items: center;
-    height: 250px;
-    justify-content: space-between;
+    align-items: flex-end;
+    height: 500px;
+    text-decoration: none;
+
 }
 
 .work-text {
     font-size: 36px;
-    padding: 10px;
+    text-align: justify;
+    padding-left: 50%;
+
 }
 
 .work-me h3 {
@@ -145,13 +149,80 @@ header nav ul li a:hover {
     height: 250px;
     padding: 10px;
 }
+.service-grid-container {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 25px;
+  }
+  .service-grid-item {
+    width: 200px;
+    height: 200px;
+    background-color: #024e76;
+    border: solid;
+    padding: .5em;
+  }
+  .service-grid-item a {
+      color: black;
+      width: 200px;
+      height: 200px;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .service-grid-item a:hover {
+    color: white;
+}
 
+  .box1 {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 1; 
+    grid-row-end: 3; 
+    width: 250px;
+    height: 250px;
+  }
+  .box6 {
+      height: 150px;
 
+  }
+.contact-me {
+    margin: 50px 50px 10px 25px;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    height: 250px;
+    justify-content: space-between;
+}
+.contact-me h3 {
+    border-right: 10px solid #39a6b2;
+    font-size: 46px;
+    height: 250px;
+    padding: 10px;
+}
+.contact-me nav {
+    margin: 8px 0;
+}
 
+.contact-me nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 10px;
+}
 
-
-
-
+.contact-me nav ul li a {
+    padding: 15px 20px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid;
+    color: #024e76;
+    margin: 35px;
+}
 
 
 .flex-row {
